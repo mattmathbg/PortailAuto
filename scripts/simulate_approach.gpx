@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="PortailCROUS_Simulator" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Trajectoire d'approche en voiture (35 km/h) vers le portail</name>
+    <desc>Simulation de passage du véhicule à travers le Geofence décentré amont</desc>
+  </metadata>
+  <trk>
+    <name>Approche Portail CROUS</name>
+    <trkseg>
+      <!-- Point 1 : À 350 m en amont (Hors zone) -->
+      <trkpt lat="48.85850" lon="2.35050">
+        <ele>35.0</ele>
+        <time>2026-10-23T20:00:00Z</time>
+      </trkpt>
+      <!-- Point 2 : À 250 m en amont (Hors zone) -->
+      <trkpt lat="48.85790" lon="2.35100">
+        <ele>35.0</ele>
+        <time>2026-10-23T20:00:10Z</time>
+      </trkpt>
+      <!-- Point 3 : À 150 m en amont (Entrée dans le Geofence décentré) -->
+      <trkpt lat="48.85720" lon="2.35160">
+        <ele>35.0</ele>
+        <time>2026-10-23T20:00:20Z</time>
+      </trkpt>
+      <!-- Point 4 : Au centre du Geofence décentré (~120 m avant la grille) -->
+      <trkpt lat="48.85660" lon="2.35220">
+        <ele>35.0</ele>
+        <time>2026-10-23T20:00:23Z</time>
+      </trkpt>
+      <!-- Point 5 : À 60 m avant la grille (L'appel a déjà été émis, le portail s'ouvre) -->
+      <trkpt lat="48.85600" lon="2.35270">
+        <ele>35.0</ele>
+        <time>2026-10-23T20:00:30Z</time>
+      </trkpt>
+      <!-- Point 6 : Devant la grille du portail (Grille complètement ouverte !) -->
+      <trkpt lat="48.85560" lon="2.35300">
+        <ele>35.0</ele>
+        <time>2026-10-23T20:00:36Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

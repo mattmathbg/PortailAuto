@@ -1,0 +1,68 @@
+# ==============================================================================
+# Android & Kotlin .gitignore - PortailAuto
+# ==============================================================================
+
+# Built application files & artifacts
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Output directories
+build/
+app/build/
+/build
+*/build
+captures/
+/captures
+
+# Gradle files & caches
+.gradle/
+buildOutput/
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.kotlin/
+
+# Local configuration file (SDK path, credentials, etc.)
+local.properties
+
+# Log files
+*.log
+
+# Android Studio Navigation Editor
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Keystore & Signing files (NEVER commit secrets or release keys)
+*.jks
+*.keystore
+release-keystore.properties
+
+# External Native Build / NDK
+.externalNativeBuild/
+.cxx/
+
+# Google Services & Firebase (uncomment if applicable)
+# google-services.json
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# Package Manager & Editor backups
+*~
+*.swp
+*.bak
+*.orig

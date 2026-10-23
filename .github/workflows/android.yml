@@ -1,0 +1,35 @@
+name: Android CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: gradle
+
+    - name: Grant execute permission for gradlew (if present)
+      run: |
+        if [ -f "./gradlew" ]; then
+          chmod +x gradlew
+        fi
+
+    - name: Validate Gradle wrapper and project configuration
+      run: |
+        echo "Validating Android Project Structure and Gradle version catalog..."
+        test -f settings.gradle.kts
+        test -f build.gradle.kts
+        test -f gradle/libs.versions.toml
